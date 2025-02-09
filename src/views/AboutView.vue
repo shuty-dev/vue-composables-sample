@@ -1,6 +1,12 @@
+<script setup lang="ts">
+import { useMouse } from '@/composables/mouse'
+
+const { x, y } = useMouse()
+</script>
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <p>Mouse position (About) is at: {{ x }}, {{ y }}</p>
   </div>
 </template>
 
